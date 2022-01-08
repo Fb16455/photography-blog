@@ -1,0 +1,21 @@
+---
+title: Dopetrope
+layout: default
+---
+	<!-- Content --> 
+<article class="box post"> 
+<header> 
+ <h2>The Blog</h2>
+</header> 
+... <!-- Blank space --> 
+</article>
+
+post.excerpt for each listed post. This is actually very easy to do. 
+<ul> 
+ {% for post in site.posts %} 
+ <li> 
+ <a href="{{ post.url }}"><strong> {{ post.title }} </strong></a> 
+ <p> {{ post.excerpt }} </p> 
+ </li> 
+ {% endfor %} 
+</ul>
